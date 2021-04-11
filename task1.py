@@ -71,7 +71,15 @@ class student:
 
         self.grades=lis2
 
-
+    def average(self):
+        a = self.grades
+        b = len(a)
+        c=0
+        for i in range(0,b):
+            d=a[i]
+            c=c+d
+        c=c/b
+        return c
 
     def __del__(self):
         print("Exiting the service")
