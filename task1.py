@@ -67,9 +67,7 @@ class student:
     def getCourses(self, lis1):
         self.courses = lis1
 
-    def getGrades(self, lis2):
 
-        self.grades=lis2
 
     def average(self):
         a = self.grades
