@@ -21,8 +21,44 @@ getCourses(list)- Receives a list of courses and stores that in the class proper
 getGrades(list) - Receives a list of grades and stores that in the class property
 constructor     - should require the student name, studentNumber and grade (in that order)
 """
-
 class student:
+    
+    # properties should be listed first
+    name = ""
+    studentNumber = ""
+    grade = 0
+    courses = []
+    grades = []
+
+    def __init__(self, name, studentNumber, grade, courses = [], grades = []): # You will need to create your own input parameters for all methods
+        self.name = name
+        self.studentNumber = studentNumber
+        self.grade = grade
+        self.courses = courses
+        self.grades = grades
+
+    def getHonorRoll(self):
+        a = self.grades
+
+        a.sort()
+        honornumber = a[-1] + a[-2] + a[-3] + a[-4] + a[-5]
+        honornumber = honornumber / 5
+        honornumber = int(honornumber)
+        if honornumber >= 86:
+            return True
+
+        else: 
+            return False
+
+    def showCourses(self):
+        lis = self.courses
+        answer = print(lis)
+        return answer
+
+
+
+    def __del__(self):
+        print("Exiting the service")
 
     # properties should be listed first
 
