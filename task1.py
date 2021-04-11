@@ -55,6 +55,15 @@ class student:
         answer = print(lis)
         return answer
 
+    def showGrade(self, ind):
+
+        c1=self.courses
+        course=c1[ind]
+        grades=self.grades
+        gr2=grades[ind]
+        answer=print(self.name + ' has a '+ str(gr2) + '%'+' in ' + str(course)+'.')
+        return answer
+
 
 
     def __del__(self):
