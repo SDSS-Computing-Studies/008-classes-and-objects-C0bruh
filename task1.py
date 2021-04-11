@@ -97,7 +97,5 @@ def main():
     st2.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
     st2.getGrades( [71, 98, 93, 95, 68, 81, 71])
 
-
-
-
+    
 main()
