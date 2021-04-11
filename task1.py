@@ -84,16 +84,6 @@ class student:
     def __del__(self):
         print("Exiting the service")
 
-    # properties should be listed first
-
-    def __init__(): # You will need to create your own input parameters for all methods
-        pass
-
-    def __del__():
-        pass
-
-    def average(self):
-        pass
 
 def main():
     # This contains test data that will be used by the autograder.
